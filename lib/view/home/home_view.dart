@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_musics/constant/color_constant.dart';
+import 'package:google_musics/widgets/appBar.dart';
+import 'package:google_musics/core/extension/context_extension.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -6,8 +9,12 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
+  ColorConstants constants = ColorConstants.instance;
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+        appBar: CustomAppBar(
+      height: context.sizeH(0.08),
+    ));
   }
 }

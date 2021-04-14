@@ -50,6 +50,10 @@ flutter_native_splash
 2.12
 file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_native_splash-1.1.7+1/
 file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_native_splash-1.1.7+1/lib/
+flutter_svg
+2.12
+file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-0.21.0+1/
+file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-0.21.0+1/lib/
 image
 2.12
 file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/image-3.0.2/
@@ -66,6 +70,14 @@ path
 2.12
 file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/
 file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/lib/
+path_drawing
+2.12
+file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/path_drawing-0.5.0/
+file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/path_drawing-0.5.0/lib/
+path_parsing
+2.12
+file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-0.2.0/
+file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-0.2.0/lib/
 petitparser
 2.12
 file:///C:/Users/broku/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-4.1.0/

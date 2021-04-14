@@ -5,6 +5,7 @@ class ColorConstants {
 
   ColorConstants._init();
 
-  final roseOfSharon = Color(0xFFC45900);
+  final primaryColor = Color(0xFFEF6C00);
   final dodgerBlue = Color(0xFF536DFE);
+  final accenColor = Color(0xffffffff);
 }
