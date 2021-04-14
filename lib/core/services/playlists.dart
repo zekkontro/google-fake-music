@@ -9,7 +9,7 @@ class PlaylistService extends BaseService {
 
     Map<String, dynamic> jsonData = jsonDecode(content);
 
-    List<Map<String, dynamic>> data = jsonData['playlists'];
+    List<dynamic> data = jsonData['playlists'];
 
     return List.generate(data.length, (index) => Playlist.fromMap(data[index]));
   }

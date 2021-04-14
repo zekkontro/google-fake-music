@@ -10,16 +10,21 @@ class TodayBiggestHits extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: context.sizeW(0.40),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(6),
       ),
       child: Column(
         children: [
-          Image.asset(playlist.image),
-          SizedBox(
-            height: 15,
+          Container(
+            height: context.sizeH(0.20),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(16),
+              image: DecorationImage(image: AssetImage(playlist.image), fit: BoxFit.cover),
+            ),
           ),
+          SizedBox(height: 15),
           Text(
             playlist.name,
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600, fontSize: 20),
