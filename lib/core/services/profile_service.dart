@@ -13,4 +13,9 @@ class ProfileService extends BaseService {
 
     return List.generate(data.length, (index) => Profile.fromMap(data[index]));
   }
+
+  Future<Profile> getProfileByIndex(int index) async {
+    List<Profile> profile = await getProfiles();
+    return profile[index];
+  }
 }
