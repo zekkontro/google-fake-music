@@ -1,0 +1,78 @@
+{
+    "top-songs": [
+        {
+            "name": "The Language",
+            "author": "Drake",
+            "image": "the-language"
+        },
+        {
+            "name": "DS2 (Deluxe)",
+            "author": "Future",
+            "image": "ds2"
+        },
+        {
+            "name": "6 God",
+            "author": "Drake",
+            "image": "6-god"
+        },
+        {
+            "name": "2014 Forest Hills Dr",
+            "author": "J. Cole",
+            "image": "forest-hills-dr"
+        },
+        {
+            "name": "What A Time To...",
+            "author": "Drake & Future",
+            "image": "what-a-time-to"
+        },
+        {
+            "name": "Alright",
+            "author": "Kendrick Lamar",
+            "image": "alright"
+        }
+    ],
+    "profiles": [
+        {
+            "name": "Jack Jhonson Radio",
+            "short-name": "Jack Jhonson",
+            "description": "Hear songs by Jack Johnson, Donavon \n Frankenreiter, G. Love, John Mayer, and more.",
+            "profile-image": "profile-1",
+            "profile-bg": "profile-1"
+        },
+        {
+            "name": "Maximiliana Wilma",
+            "short-name": "Maximiliana",
+            "description": "Hear songs by Maximiliana Wilma, Donavon \n Frankenreiter, G. Love, John Mayer, and more.",
+            "profile-image": "profile-2",
+            "profile-bg": "profile-2"
+        },
+        {
+            "name": "Gulzar Wide",
+            "short-name": "Gulzar",
+            "description": "Hear songs by Gulzar, Donavon \n Frankenreiter, G. Love, John Mayer, and more.",
+            "profile-image": "profile-3",
+            "profile-bg": "profile-3"
+        },
+        {
+            "name": "Matthew Ellis",
+            "short-name": "Matthew",
+            "description": "Hear songs by Matthew, Donavon \n Frankenreiter, G. Love, John Mayer, and more.",
+            "profile-image": "profile-4",
+            "profile-bg": "profile-4"
+        }
+    ],
+    "playlists": [
+        {
+            "name": "Today's Biggest Hits",
+            "image": "playlist-1"
+        },
+        {
+            "name": "Today's Biggest Hits 2",
+            "image": "playlist-2"
+        },
+        {
+            "name": "Today's Biggest Hits 3",
+            "image": "playlist-3"
+        }
+    ]
+}

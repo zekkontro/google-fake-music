@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_native_splash: ^1.1.7+1
   flutter_launcher_icons: ^0.9.0
+  random_color: ^1.0.5
 
 dev_dependencies:
   flutter_test:
@@ -125,12 +126,13 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/categories/
+    - assets/playlists/
     - assets/images/
-    - assets/musics/
+    - assets/songs/
     - assets/profile-backgrounds/
     - assets/profiles/
     - assets/utilities/
+    - assets/api.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
