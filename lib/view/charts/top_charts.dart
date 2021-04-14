@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_musics/constant/svg_icons.dart';
 import 'package:google_musics/core/extension/context_extension.dart';
+import 'package:google_musics/core/services/song_service.dart';
+import 'package:google_musics/widgets/top_charts_songs.dart';
 import 'package:google_musics/widgets/transparent_app_bar.dart';
 
 class TopCharts extends StatefulWidget {
@@ -13,11 +15,11 @@ class TopCharts extends StatefulWidget {
 
 class _TopChartsState extends State<TopCharts> {
   SvgIcons svgIcons = SvgIcons.instance;
-
+  SongService songService = SongService();
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(top: 20),
+        padding: const EdgeInsets.only(top: 50),
         child: Stack(
           children: [
             buildContainer(context),
@@ -36,8 +38,13 @@ class _TopChartsState extends State<TopCharts> {
     return Column(
       children: [
         Container(
-          width: MediaQuery.of(context).size.width,
-          child: Image.asset('assets/profile-backgrounds/background-image.png'),
+          height: context.sizeH(0.4),
+          width: double.infinity,
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage(
+                      "assets/profile-backgrounds/background-image.png"))),
         ),
       ],
     );
@@ -52,6 +59,7 @@ class _TopChartsState extends State<TopCharts> {
             height: 20.0,
           ),
           buildTopSongs(),
+          TopSongs()
         ],
       ),
     );
@@ -83,7 +91,7 @@ class _TopChartsState extends State<TopCharts> {
   }
 }
 
- /*appBar: CustomAppBar(
+/*appBar: CustomAppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
         height: context.sizeH(0.05),

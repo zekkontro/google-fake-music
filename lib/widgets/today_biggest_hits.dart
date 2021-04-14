@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_musics/core/extension/context_extension.dart';
 import 'package:google_musics/models/playlist.dart';
@@ -21,13 +20,15 @@ class TodayBiggestHits extends StatelessWidget {
             height: context.sizeH(0.20),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
-              image: DecorationImage(image: AssetImage(playlist.image), fit: BoxFit.cover),
+              image: DecorationImage(
+                  image: AssetImage(playlist.image), fit: BoxFit.cover),
             ),
           ),
           SizedBox(height: 15),
           Text(
             playlist.name,
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600, fontSize: 20),
+            style: TextStyle(
+                color: Colors.black, fontWeight: FontWeight.w600, fontSize: 20),
           )
         ],
       ),

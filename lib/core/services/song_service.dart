@@ -9,7 +9,7 @@ class SongService extends BaseService {
 
     Map<String, dynamic> jsonData = jsonDecode(content);
 
-    List<Map<String, dynamic>> data = jsonData['top-songs'];
+    List<dynamic> data = jsonData['top-songs'];
 
     return List.generate(data.length, (index) => Song.fromMap(data[index]));
   }

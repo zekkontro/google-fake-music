@@ -9,7 +9,7 @@ class ProfileService extends BaseService {
 
     Map<String, dynamic> jsonData = jsonDecode(content);
 
-    List<Map<String, dynamic>> data = jsonData['profiles'];
+    List<dynamic> data = jsonData['profiles'];
 
     return List.generate(data.length, (index) => Profile.fromMap(data[index]));
   }
