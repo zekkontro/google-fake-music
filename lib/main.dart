@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_musics/view/charts/top_charts.dart';
 import 'package:google_musics/view/home/home_view.dart';
 
 void main() {

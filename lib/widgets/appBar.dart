@@ -4,6 +4,7 @@ import 'package:google_musics/constant/color_constant.dart';
 import 'package:google_musics/constant/svg_icons.dart';
 import 'package:google_musics/core/base/base_state.dart';
 
+// ignore: must_be_immutable
 class CustomAppBar extends StatelessWidget
     with PreferredSizeWidget
     implements BaseState {
