@@ -9,7 +9,8 @@ class CustomAppBar extends StatelessWidget
     implements BaseState {
   final double height;
   final List<Widget> actions;
-  CustomAppBar({this.height, this.actions});
+  final String text;
+  CustomAppBar({this.height, this.actions, this.text});
 
   @override
   Size get preferredSize => Size.fromHeight(height);
@@ -28,7 +29,7 @@ class CustomAppBar extends StatelessWidget
             debugPrint("menu opened");
           }),
       backgroundColor: Theme.of(context).primaryColor,
-      title: Text("Listen Now"),
+      title: Text(text),
       actions: actions,
     );
   }
