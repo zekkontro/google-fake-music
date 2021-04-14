@@ -8,9 +8,16 @@ class CustomAppBar extends StatelessWidget
     with PreferredSizeWidget
     implements BaseState {
   final double height;
+  final Color backgroundColor;
+  final double elevation;
   final List<Widget> actions;
   final String text;
-  CustomAppBar({this.height, this.actions, this.text});
+  CustomAppBar(
+      {this.height,
+      this.actions,
+      this.text,
+      this.backgroundColor,
+      this.elevation});
 
   @override
   Size get preferredSize => Size.fromHeight(height);
@@ -23,12 +30,13 @@ class CustomAppBar extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      elevation: elevation,
       leading: IconButton(
           icon: svgIcons.menu,
           onPressed: () {
             debugPrint("menu opened");
           }),
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: backgroundColor,
       title: Text(text),
       actions: actions,
     );

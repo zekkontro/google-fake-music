@@ -17,6 +17,8 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: CustomAppBar(
+      backgroundColor: Theme.of(context).primaryColor,
+      elevation: 1.0,
       text: "Listen Now",
       actions: [
         CupertinoButton(child: svgIcons.broadcast, onPressed: () {}),
