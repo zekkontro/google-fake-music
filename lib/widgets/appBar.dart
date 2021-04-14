@@ -8,8 +8,8 @@ class CustomAppBar extends StatelessWidget
     with PreferredSizeWidget
     implements BaseState {
   final double height;
-
-  CustomAppBar({this.height});
+  final List<Widget> actions;
+  CustomAppBar({this.height, this.actions});
 
   @override
   Size get preferredSize => Size.fromHeight(height);
@@ -29,10 +29,7 @@ class CustomAppBar extends StatelessWidget
           }),
       backgroundColor: Theme.of(context).primaryColor,
       title: Text("Listen Now"),
-      actions: [
-        CupertinoButton(child: svgIcons.broadcast, onPressed: () {}),
-        CupertinoButton(child: svgIcons.search, onPressed: () {})
-      ],
+      actions: actions,
     );
   }
 }
